@@ -49,11 +49,30 @@ jobs:
     - name: Deploy Container
       run: |
 
-        docker stop demo || true
+          deploy:
 
-        docker rm demo || true
+    needs: build
 
-        docker run -d \
-        --name demo \
-        -p 8080:80 \
-        ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+
+            docker pull ${{ secrets.DOCKER_USERNAME }}/cicd-demo:latest
+
+            docker stop cicd-demo || true
+
+            docker rm cicd-demo || true
+
+            docker run -d \
+              --name cicd-demo \
+              -p 80:80 \
+              --restart always \
+              ${{ secrets.DOCKER_USERNAME }}/cicd-demo:latest
