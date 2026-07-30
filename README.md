@@ -106,6 +106,9 @@ Task-3-CICD-Docker/
 ├── README.md
 └── LICENSE
 ```
+<img width="1672" height="941" alt="2" src="https://github.com/user-attachments/assets/b56ac105-6ceb-433b-ac37-810b160ed342" />
+
+
 
 ---
 
