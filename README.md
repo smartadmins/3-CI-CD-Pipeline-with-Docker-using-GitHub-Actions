@@ -85,7 +85,7 @@ Automate Docker image creation and deployment using GitHub Actions.
              Deploy to AWS EC2
 ```
 
----
+-----
 
 # 📂 Project Structure
 
