@@ -89,7 +89,7 @@ Automate Docker image creation and deployment using GitHub Actions.
 
 # 📂 Project Structure
 
-```text
+```text----
 Task-3-CICD-Docker/
 │
 ├── .github/
