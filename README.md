@@ -4,7 +4,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
 ![Nginx](https://img.shields.io/badge/Nginx-Web%20Server-green?logo=nginx)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-Automated-success)
-![License](https://img.shields.io/badge/License-MIT-yellow) .
+![License](https://img.shields.io/badge/License-MIT-yellow) 
 
 ---
 
