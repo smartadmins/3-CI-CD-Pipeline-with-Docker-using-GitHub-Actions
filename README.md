@@ -1,4 +1,3 @@
-# 3-CI-CD-Pipeline-with-Docker-using-GitHub-Actions
 # 🚀 Task 3: CI/CD Pipeline with Docker using GitHub Actions
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?logo=githubactions)
